@@ -1,0 +1,104 @@
+:root{ 
+--Red:hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+*, *::before, *::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: var(--Red);
+    background-image: url(/images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   text-align: center;
+   width: 85%;
+}
+h1{
+    font-size: 1.75rem;
+    padding: 1rem 1rem;
+
+}
+#free-trial{
+    background-color: var(--Blue);
+    margin: 3rem 0rem 1.5rem 0rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px rgb(102, 47, 47);
+}
+form{
+    background-color: white;
+    border-radius: 10px;
+}
+.container .button{
+    background-color: var(--Green);
+    border: var(--Green);
+    width: 90%;
+    padding: 1rem;
+    margin-top: 7%;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container .button:hover{
+    cursor: pointer;
+}
+.container input{
+    width: 90%;
+    padding: 1rem;
+    margin-top: 7%;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: bold;
+}
+.container form label{
+    position: absolute;
+    right: 15%;
+    padding-top: 25px;
+    display: none;
+}
+.container .error{
+    color: var(--Red);
+    width: 95%;
+    text-align: right;
+    font-size: 12px;
+    display: none;
+}
+#terms{
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+    padding: 10px 30px;
+    line-height: 20px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 768px){
+    body{
+        background-image: url(/images/bg-intro-desktop.png);
+        background-size: cover;
+    }
+    .container{
+        flex-direction: row;
+    
+    }
+}
