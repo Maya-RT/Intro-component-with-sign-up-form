@@ -23,6 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100dvh;
+    font-weight: 400;
 }
 .container{
     display: flex;
@@ -35,7 +36,6 @@ body{
 h1{
     font-size: 1.75rem;
     padding: 1rem 1rem;
-
 }
 #free-trial{
     background-color: var(--Blue);
@@ -43,6 +43,9 @@ h1{
     padding: 1rem 3rem;
     border-radius: 10px;
     box-shadow: 0px 6px 6px rgb(102, 47, 47);
+}
+#free-trial .bold-free-trial{
+    font-weight: 700;
 }
 form{
     background-color: white;
@@ -86,8 +89,15 @@ form{
 #terms{
     color: var(--Grayish-Blue);
     font-size: 10px;
-    padding: 10px 30px;
+    padding: 10px 35px;
     line-height: 20px;
+}
+#terms .color-terms{
+    color: var(--Red);
+    font-weight: 600;
+}
+#terms .color-terms:hover{
+    cursor: pointer;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -99,6 +109,25 @@ form{
     }
     .container{
         flex-direction: row;
-    
+        flex: auto;
     }
+    .form-box{
+        width: 100%;
+        max-width: 650px;
+        padding-right: 4%;
+    }
+    .text{
+        text-align: left;
+        margin-right: 7%;
+        padding-left: 7%;
+    }
+    h1{
+        font-size: 3.5rem;
+        padding: 1.5rem 0;
+    }
+    .text p{
+        font-size: 18px;
+        padding-right: 15%;
+    }
+
 }
