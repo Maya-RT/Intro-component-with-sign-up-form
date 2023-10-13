@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-Project's not finished yet so screenshot will be available once the project will be completed.
-
+![Capture d’écran](https://github.com/Maya-RT/Intro-component-with-sign-up-form/assets/117313080/a162ddfb-4908-49e9-a521-672b38830a47)
 
 ### Links
 
