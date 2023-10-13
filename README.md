@@ -41,39 +41,45 @@ Project's not finished yet so screenshot will be available once the project will
 
 ## My process
   I started, like any other project of mine, with de mobile design. Once it's complited I followed with the desktop design. I first did the HTML and CSS part and finished with JavaScript. 
+  
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- JavaScript
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The challenge was to make the following message "Looks like this is not an email" appear if the text on the input was not a valid email, but I went a little further and made two messages. The first if the it wasn't a valid email and the second if the input was left empty.
+I added as well a success function so when the inputs where correct the border color of the input case would change to green and the error message and icon would desapear.
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+if (emailValue ===''){
+        errorFor(email, 'Email cannot be empty');
+    }else if (!validEmail(emailValue)){
+        errorFor(email, 'Looks like this is not an email');
+    }else{
+        successFor(email);
+    }
+    and
+function successFor(input){
+    const formElement = input.parentElement;
+    const small = formElement.querySelector('small');
+    formElement.className = 'form-element success';
+    const label = formElement.querySelector('label')
+    label.style.display = "none";
+    small.style.display= "none";
 }
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+```
 
 
 ### Continued development
 
-I challenged myself with this project to see if a can complet a project without any tutorial or help I could get on the internet that's why it took me a little bit longer than other projects I completed.
+JavaScript part was the longest because I encountered many errors and bugs that took some time to solve. However I'm very happy to have complited this challenge it was very testing on my JS skills and I learned so much! 
 
 
 

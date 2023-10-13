@@ -72,19 +72,27 @@ form{
     font-family: "Poppins", sans-serif;
     border: 1px solid hsl(246, 25%, 77%);
     font-weight: bold;
+    border-radius: 5px;
 }
 .container form label{
     position: absolute;
     right: 15%;
-    padding-top: 25px;
+    margin-top: -35px;
     display: none;
 }
-.container .error{
+.form-box small{
     color: var(--Red);
-    width: 95%;
-    text-align: right;
     font-size: 12px;
-    display: none;
+    margin-left: 55%;
+   display: none;
+}
+.form-element.error input{
+    border: 2px solid;
+    border-color: var(--Red);
+}
+.form-element.success input{
+    border: 2px solid;
+    border-color: var(--Green);
 }
 #terms{
     color: var(--Grayish-Blue);
