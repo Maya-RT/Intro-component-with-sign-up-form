@@ -76,14 +76,14 @@ form{
 }
 .container form label{
     position: absolute;
-    right: 15%;
-    margin-top: -35px;
+    right: 20%;
+    margin-top: -37px;
     display: none;
 }
 .form-box small{
     color: var(--Red);
     font-size: 12px;
-    margin-left: 55%;
+    margin-left: 50%;
    display: none;
 }
 .form-element.error input{
@@ -137,5 +137,10 @@ form{
         font-size: 18px;
         padding-right: 15%;
     }
-
+    .container form label{
+        right: 13%;
+    }
+    .form-box small{
+        margin-left: 60%;
+    }
 }
